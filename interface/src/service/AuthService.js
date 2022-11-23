@@ -3,7 +3,7 @@ import axios from "axios";
 const AuthService = {
   register: async (request) => {
     return await axios
-      .post("https://8080-imamabubaka-quizmaestro-hdwkomzk68e.ws-eu77.gitpod.io/auth/registration", request)
+      .post("https://quiz-maestro-server.vercel.app//auth/registration", request)
       .then((response) => {
         return true;
       })
@@ -13,7 +13,7 @@ const AuthService = {
   },
   login: async (request) => {
     return await axios
-      .post("https://8080-imamabubaka-quizmaestro-hdwkomzk68e.ws-eu77.gitpod.io/auth/login", request)
+      .post("https://quiz-maestro-server.vercel.app//auth/login", request)
       .then((response) => {
         const authToken = response.headers["auth-token"];
         sessionStorage.setItem("quizmaestro-token", authToken);
