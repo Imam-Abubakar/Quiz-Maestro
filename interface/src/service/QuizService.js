@@ -5,7 +5,7 @@ const QuizService = {
     const user_id = sessionStorage.getItem("quizmaestro-user-id");
     const authToken = sessionStorage.getItem("quizmaestro-authToken");
     return await axios
-      .post("https://quiz-maestro-server.vercel.app//quizzes/create/" + user_id, request, {
+      .post("https://quiz-maestro-server.vercel.app/quizzes/create/" + user_id, request, {
         headers: {
           "auth-token": authToken,
         },
@@ -20,7 +20,7 @@ const QuizService = {
   findByUser: async (user_id) => {
     const authToken = sessionStorage.getItem("quizmaestro-authToken");
     return await axios
-      .get("https://quiz-maestro-server.vercel.app//quizzes/quizzer/" + user_id, {
+      .get("https://quiz-maestro-server.vercel.app/quizzes/quizzer/" + user_id, {
         headers: {
           "auth-token": authToken,
         },
@@ -35,7 +35,7 @@ const QuizService = {
   findById: async (quiz_id) => {
     const authToken = sessionStorage.getItem("quizmaestro-authToken");
     return await axios
-      .get("https://quiz-maestro-server.vercel.app//quizzes/" + quiz_id, {
+      .get("https://quiz-maestro-server.vercel.app/quizzes/" + quiz_id, {
         headers: {
           "auth-token": authToken,
         },
@@ -50,7 +50,7 @@ const QuizService = {
   submitAnswer: async (request) => {
     const user_id = sessionStorage.getItem("quizmaestro-user-id");
     const authToken = sessionStorage.getItem("quizmaestro-authToken");
-    const uri = "https://quiz-maestro-server.vercel.app//quizzes/submit/" + user_id;
+    const uri = "https://quiz-maestro-server.vercel.app/quizzes/submit/" + user_id;
     return await axios
       .post(uri, request, {
         headers: {
