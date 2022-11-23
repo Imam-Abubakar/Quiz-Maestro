@@ -1,0 +1,610 @@
+:root {
+  --quizmaestro-light-purple: #c7c7fc;
+  --quizmaestro-dark-purple: #8e8cfc;
+  --quizmaestro-deep-purple: #6464fc;
+  --quizmaestro-darker-purple: #3a3ac7;
+  --quizmaestro-bg-dark: rgb(255, 246, 238);
+  --quizmaestro-light: #ffffff;
+  --quizmaestro-btn-bg: rgb(106, 111, 245);
+  --quizmaestro-btn-bg-alt: rgb(48, 50, 111);
+}
+
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 30s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg {
+  background-color: rgb(255, 246, 238);
+}
+
+.button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: medium;
+  color: var(--quizmaestro-light);
+  background: none;
+  border: none;
+}
+
+.dance {
+  animation: dancing 10s infinite;
+}
+
+@keyframes dancing {
+
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: rotate(0deg) translateX(-5px);
+  }
+
+  12.5% {
+    transform: rotate(-20deg);
+  }
+
+  37.5% {
+    transform: rotate(-20deg);
+  }
+
+  62.5% {
+    transform: rotate(10deg);
+  }
+
+  87.5% {
+    transform: rotate(20deg);
+  }
+}
+
+.login-button {
+  width: 140px;
+  height: 40px;
+  border-style: none;
+  background-color: var(--quizmaestro-btn-bg);
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+
+.login-button:hover {
+  color: var(--quizmaestro-bg-dark);
+  background-color: #000000;
+}
+
+.login-button:active {
+  color: var(--quizmaestro-bg-dark);
+  background-color: #000000;
+}
+
+.footer {
+  margin-top: 15%;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.demo-button {
+  width: 230px;
+  height: 56px;
+  border-style: none;
+  background-color: var(--quizmaestro-btn-bg);
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+
+.demo-button:hover {
+  color: var(--quizmaestro-bg-dark);
+  background-color: #000000;
+}
+
+.demo-button:active {
+  color: var(--quizmaestro-bg-dark);
+  background-color: #000000;
+}
+
+.logout-button {
+  width: 140px;
+  height: 40px;
+  border-style: none;
+  background-color: var(--quizmaestro-btn-bg);
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+
+.logout-button:hover {
+  color: var(--quizmaestro-light);
+  background-color: red;
+}
+
+.logout-button:active {
+  color: var(--quizmaestro-light);
+  border: 2px solid red;
+  background-color: var(--quizmaestro-btn-bg-alt);
+}
+
+.register-button {
+  width: 140px;
+  height: 40px;
+  border-style: none;
+  background-color: var(--quizmaestro-btn-bg);
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+
+.register-button:hover {
+  background-color: #000000;
+}
+
+.register-button:active {
+  border: 2px solid var(--quizmaestro-deep-purple);
+  background-color: #000000;
+}
+
+.github-button {
+  width: 140px;
+  height: 40px;
+  border-style: none;
+  background-color: var(--quizmaestro-btn-bg);
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+
+.github-button:hover {
+  background-color: #000000;
+}
+
+.github-button:active {
+  border: 2px solid var(--quizmaestro-deep-purple);
+  background-color: #000000;
+}
+
+.jumbo {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 2vh;
+  color: #000000;
+}
+
+.jumbo-subtitle {
+  text-align: center;
+  color: var(--quizmaestro-btn-bg);
+  font-size: larger;
+}
+
+.copyright {
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+  color: var(--quizmaestro-btn-bg);
+  font-size: small;
+}
+
+.copyright a {
+  text-decoration: none;
+  margin: 20px 0px 5px 0px;
+  color: var(--quizmaestro-btn-bg);
+  font-size: small;
+}
+
+.back-to-home {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  color: var(--quizmaestro-btn-bg);
+  text-decoration: underline;
+}
+
+.auth-title {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 2em;
+  color: #000000;
+}
+
+.input-label {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.input-field {
+  height: 50px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--quizmaestro-bg-dark);
+  background-color: var(--quizmaestro-light-purple);
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+  border-radius: none;
+}
+
+.input-field::placeholder {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 14px;
+  color: #ffffff;
+}
+
+.submit-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  border-style: none;
+  background-color: var(--quizmaestro-deep-purple);
+}
+
+.section {
+  background-color: var(--quizmaestro-light);
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+  padding: 26px;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  background-color: var(--quizmaestro-btn-bg);
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 95%;
+  height: 90%;
+  z-index: -2;
+  border: 2px solid rgb(0, 0, 0);
+  transition: all 0.3s ease 0s;
+}
+
+.profile-name {
+  color: #000000;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.profile-email {
+  color: #708090;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.count-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--quizmaestro-btn-bg);
+  margin-top: 10px;
+}
+
+.count-number {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.tools {}
+
+.tool-button {
+  background-color: var(--quizmaestro-btn-bg);
+  border: 2px solid #000000;
+  transition: all 0.3s ease 0s;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  color: var(--quizmaestro-light);
+  width: max-content;
+  height: max-content;
+  margin: 10px 0px 10px 6px;
+  padding: 16px 30px 16px 30px;
+}
+
+.tool-button:hover {
+  background-color: #000000;
+  -webkit-transition: background-color 500ms ease-out;
+  -ms-transition: background-color 500ms ease-out;
+  transition: background-color 500ms ease-out;
+}
+
+.tool-button:active {
+  background-color: #000000;
+}
+
+.grayed {
+  filter: grayscale(100%);
+  background-color: dimgray;
+}
+
+/* bootstrap element  */
+.card {
+  background: none;
+  border: none;
+}
+
+/* wowowoowow */
+.tooltip-wrapper {
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tooltip-wrapper .tool-tip {
+  background-color: var(--quizmaestro-bg-dark);
+  padding: 16px;
+  width: 240px;
+  z-index: 1;
+  border: 2px solid #000000;
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip-wrapper:hover .tool-tip {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 600ms ease-out;
+}
+
+.input-quiz-title {
+  background: none;
+  border: none;
+  width: 90%;
+  margin-right: 10px;
+}
+
+.input-quiz-title:hover {
+  border-bottom: 2px solid var(--quizmaestro-bg-dark);
+}
+
+.input-quiz-title:active,
+.input-quiz-title:focus {
+  border-bottom: 2px solid var(--quizmaestro-deep-purple);
+}
+
+.input-quiz-desc {
+  background: none;
+  border: none;
+  width: 70%;
+}
+
+.input-quiz-desc:hover {
+  border-bottom: 2px solid var(--quizmaestro-bg-dark);
+}
+
+.input-quiz-desc:active,
+.input-quiz-desc:focus {
+  border-bottom: 2px solid var(--quizmaestro-deep-purple);
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+.input-question-title {
+  background: none;
+  border: none;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.input-question-title:hover {
+  border-bottom: 2px solid var(--quizmaestro-bg-dark);
+}
+
+.input-question-title:active,
+.input-question-title:focus {
+  border-bottom: 2px solid var(--quizmaestro-deep-purple);
+}
+
+.option-name {
+  font-size: 18px;
+}
+
+.option-dropdown {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--quizmaestro-btn-bg);
+  background: none;
+  border: none;
+  width: 10em;
+}
+
+.option-section {
+  margin: 2px;
+}
+
+.option-label {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--quizmaestro-btn-bg);
+  background: none;
+  border: none;
+  margin-top: 8px;
+}
+
+.option-input {
+  font-size: 18px;
+  background: none;
+  letter-spacing: 0.03em;
+  border: none;
+  border-bottom: 2px solid var(--quizmaestro-light-purple);
+  width: calc(44vw);
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 0.5em;
+}
+
+.option-input:hover,
+.option-input:active,
+.option-input:focus {
+  border-bottom: 2px solid var(--quizmaestro-dark-purple);
+}
+
+.remove-button {
+  width: max-content;
+  height: max-content;
+  border: 2px solid #000000;
+  background-color: var(--quizmaestro-btn-bg);
+  padding: 10px;
+  color: var(--quizmaestro-light);
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.remove-button:hover {
+  background-color: red;
+}
+
+.remove-button:active {
+  background-color: red;
+}
+
+.add-button {
+  width: max-content;
+  height: max-content;
+  background-color: var(--quizmaestro-btn-bg);
+  border: none;
+  padding: 10px;
+  color: var(--quizmaestro-light);
+  border: 2px solid #000000;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.add-button:hover {
+  background-color: var(--quizmaestro-btn-bg-alt);
+}
+
+.add-button:active {
+  background-color: var(--quizmaestro-btn-bg-alt);
+}
+
+.remove-option-button {
+  width: max-content;
+  height: max-content;
+  background: none;
+  border: none;
+  margin-top: 0.8em;
+  font-weight: 900;
+}
+
+.remove-option-button:hover {
+  transform: scale(1.2);
+}
+
+.remove-option-button:active {
+  transform: scale(1);
+  filter: invert();
+}
+
+.select-answer-dropdown {
+  width: 8em;
+  height: max-content;
+  background-color: var(--quizmaestro-deep-purple);
+  border: none;
+  padding: 10px;
+
+  color: var(--quizmaestro-light);
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.curated-dashboard-section {
+  margin-left: 8.37vw;
+  width: 85.8vw;
+}
+
+
+
+.quizzes-table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  counter-reset: tableCount;
+}
+
+.counterCell:before {
+  content: counter(tableCount);
+  counter-increment: tableCount;
+}
+
+.quiz-code-input {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--quizmaestro-light);
+  border-radius: 4px;
+  border-style: none;
+  background-color: #443e47;
+  width: 50%;
+  height: max-content;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 6px;
+  padding: 29px 24px 29px 24px;
+}
+
+.curated-quiz-section {
+  margin-left: 8.37vw;
+  width: 85.8vw;
+}
+
+/*=====MEDIA QUERIES========*/
+@media (max-width: 575.98px) {
+  .navbar-nav {
+    margin-top: 10px;
+    padding-left: 20px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2vw;
+  }
+  .quizzes-table {
+    width: 70vw;
+    overflow: scroll;
+  }
+}
+@media (max-width: 767.98px) {
+  .quizzes-table {
+    width: 70vw;
+    overflow: scroll;
+  }
+}
+@media (max-width: 991.98px) {
+  .quizzes-table {
+    width: 75vw;
+    overflow: scroll;
+  }
+}
+@media (max-width: 1199.98px) {
+  .quizzes-table {
+    width: 70vw;
+    overflow: scroll;
+  }
+}
+@media (max-width: 1399.98px) {
+  .quizzes-table {
+    width: 70vw;
+    overflow: scroll;
+  }
+}
