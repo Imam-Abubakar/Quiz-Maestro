@@ -7,7 +7,12 @@ const app = express();
 const connection = require('./db');
 const routes = require("./router");
 
-app.use(cors());
+//app.use(cors());
+app.use(
+    cors({
+      exposedHeaders: ["auth-token"],
+    })
+  );
 app.use(express.json());
 app.use(routes);
 
