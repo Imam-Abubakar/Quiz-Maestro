@@ -16,6 +16,9 @@ Video Demo:
 - MongoDB
 - Bootstrap
 
+- BCrypt (Password hashing)
+- JSON Web Token (Authentication token)
+
 ## Testing:
 In a case where you do not want to register with your email, feel free to use this login details to test the platform
 #### User 1
