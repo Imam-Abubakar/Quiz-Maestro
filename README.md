@@ -7,8 +7,7 @@ which other users can paste in and answer the quiz.
 
 > The platform records all submissions but set aparts submissions with 100% score
 
-Live Demo: 
-Video Demo:
+Live Demo: https://quiz-maestro.vercel.app/
 
 ## Technologies Used:
 - React
